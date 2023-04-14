@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2ndFit</title>
+        <link rel="stylesheet" href="styleF.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    </head>
+
+    <body style="background-color: #000;">
+
+
+        
+        <div class="container">
+            <div class="navbar">
+
+                <img class="logo" src="2ndFitpic/fitLogo.png" alt="logo">
+
+                <nav>
+                    <ul id="menuList">
+                        <li class="menu-item"><a href="#home" target="_blank" rel="noopener noreferrer">HOME</a></li>
+                        <li class="menu-item"><a href="#plans" target="_blank" rel="noopener noreferrer">PLANS</a></li>
+                        <li class="menu-item"><a href="#train" target="_blank" rel="noopener noreferrer">TRAINER</a></li>
+                        <li class="menu-item"><a href="#contact"target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                    </ul>
+
+                </nav>
+
+                <img src="2ndFitpic/menu-dots.png" class="menu-icon" 
+                onclick="togglemenu()">
+            </div>
+
+            <div id="home">
+                <div class="col-1">
+                    
+                    <video autoplay loop muted plays-inline class="bVid">
+                        <source src="2ndFitpic/fitT.mp4" type="video/mp4">
+                    </video>
+                
+
+                    <div class="intro">
+                        <h3>YOUR FITNESS <br>JOURNEY <br>BEGINS HERE <br>WITH THE RIGHT <br>TRAINER </h3>
+                        <a href="#plans"><button type="button">Start Now<img src="2ndFitpic/arrow.png"></button></a>
+                    </div>
+                </div>
+ 
+            </div>
+
+            <div class="col-1" id="plans">
+
+                <div class="wrapper">
+                    <input type="radio" name="slider" id="tab-1">
+                    <input type="radio" name="slider" id="tab-2">
+                    <input type="radio" name="slider" id="tab-3">
+                    <input type="radio" name="slider" id="tab-4">
+                    <header>
+                      <label for="tab-1" class="tab-1">1x week</label>
+                      <label for="tab-2" class="tab-2">2x week</label>
+                      <label for="tab-3" class="tab-3">3x week</label>
+                      
+                      <div class="slider"></div>
+                    </header>
+                    <div class="card-area">
+                      <div class="cards">
+                        <div class="row row-1">
+                          
+                          <ul class="features">
+                            <hr><li><i class="fas fa-hand-point-right    "></i><span>60 minutes $65.00</span></li><hr>
+                            <li><i class="fas fa-hand-point-right    "></i><span>45 minutes $50.00</span></li><hr>
+                            <li><i class="fas fa-hand-point-right    "></i><span>30 minutes $39.00</span></li><hr>
+                          </ul>
+                        </div>
+                        <div class="row">
+                          
+                          <ul class="features">
+                            <hr><li><i class="fas fa-hand-point-right    "></i><span>60 minutes $60.00</span></li><hr>
+                            <li><i class="fas fa-hand-point-right    "></i><span>45 minutes $45.00</span></li><hr>
+                            <li><i class="fas fa-hand-point-right    "></i><span>30 minutes $35.00</span></li><hr>
+                          </ul>
+                        </div>
+                        <div class="row">
+                          
+                          <ul class="features">
+                            <hr><li><i class="fas fa-hand-point-right    "></i><span>60 minutes $55.00</span></li><hr>
+                            <li><i class="fas fa-hand-point-right    "></i><span>45 minutes $45.00</span></li><hr>
+                            <li><i class="fas fa-hand-point-right    "></i><span>30 minutes $30.00</span></li><hr>
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <a href="#contact"><button>Contact Now</button></a>
+                  </div>
+            
+
+                <div class="row" id="train" style="margin-top: 100px;">                      
+
+                    <div class="col-1">
+
+                        <h4 style="color: aliceblue;">Marwan Abushanab</h4>
+                        <h1 style="color: aliceblue;">CEO & Personal Trainer</h1>
+
+                        <p>Marwan's background in exercise science and personal training has driven 
+                            his passion for fitness since 2014. Determined to improve his build and 
+                            increase his body mass, he pursued his Exercise and Sports Science degree 
+                            from the University of South Carolina. He decided it was time to tap into 
+                            a new world of growth and potential.</p>
+   
+                            <br>
+   
+                            <p>A short time after, he became ACE certified in personal training. This 
+                               journey drastically improved all avenues of his life. It brought his 
+                               attention to how much more there is to fitness than just an image. With 
+                               his acquired knowledge and experience, he can confidently help anyone 
+                               looking to get stronger, feel great, and get ready to set and crush 
+                               their goals.</p>
+
+                               <br>
+
+                            <a href="#plans"><button type="button">PLANS<img src="2ndFitpic/arrow.png"></button></a> 
+
+                    </div>  
+
+                    <div class="col-1">
+                        <img src="2ndFitpic/marwan.jpeg" class="marPic">
+                    </div>     
+            </div>   
+            
+            
+            
+            <div class="col-1" id="contact" style="background-color: white;">
+
+              <form action="https://formspree.io/f/xbjepqak" method="post" id="contact-form">
+                <h2 style="color: rgb(0, 195, 255); text-align: center; padding-top: 30px; padding-bottom: 30px;">CONTACT US</h2>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="phone" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+                <div id="status-message"></div>
+              </form>
+              </div>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+          
+              <script src="script.js">
+
+const form = document.getElementById("contact-form");
+const statusMessage = document.getElementById("status-message");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+
+  fetch("contact.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.text();
+      } else {
+        throw new Error("Network response was not ok.");
+      }
+    })
+    .then((responseText) => {
+      form.reset();
+      statusMessage.textContent = responseText;
+    })
+    .catch((error) => {
+      statusMessage.textContent = error.message;
+    });
+});
+
+              </script>
+
+<div class="footer">
+
+    <div class="social-links">
+    <img src="2ndFitpic/facebook.png">
+    <a target="_blank" href="https://www.instagram.com/prince_of_pump/?hl=en"><img src="2ndFitpic/instagram.png"></a>
+    <a target="_blank" href="https://www.tiktok.com/@prince_of_pump?is_from_webapp=1&sender_device=pc"><img src="2ndFitpic/tiktok.png"></a> 
+</div>
+
+</div>
+
+            </div>    
+            </div>
+        </div>
+
+
+        <script src="//smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu()
+            {
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
